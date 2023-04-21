@@ -120,7 +120,7 @@ namespace ManejoPresupuesto.Servicios
         {
             DateTime fechaInicio;
             DateTime fechaFin;
-            if (mes <= 0 || mes >= 12 || año <= 1900)
+            if (mes <= 0 || mes > 12 || año <= 1900)
             {
                 var hoy = DateTime.Today;
                 fechaInicio = new DateTime(hoy.Year, hoy.Month, 1);
